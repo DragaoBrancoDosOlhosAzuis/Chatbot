@@ -1,0 +1,59 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "agradecer": 0,
+        "back": 1,
+        "confirmar": 2,
+        "cumprimentar": 3,
+        "despedir": 4,
+        "falar_com_humano": 5,
+        "informar_problema": 6,
+        "negar": 7,
+        "nlu_fallback": 8,
+        "out_of_scope": 9,
+        "pedir_ajuda": 10,
+        "restart": 11,
+        "session_start": 12
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_determinar_ajuda": 13,
+        "action_verificar_necessidade_humano": 14,
+        "utter_acesso_conta": 15,
+        "utter_agradecer": 16,
+        "utter_cumprimentar": 17,
+        "utter_despedir": 18,
+        "utter_encaminhar_humano": 19,
+        "utter_mudar_plano": 20,
+        "utter_oferecer_ajuda": 21,
+        "utter_pedir_mais_info": 22,
+        "utter_problema_tecnico": 23
+      },
+      "entities": {
+        "problema": 0
+      },
+      "slots": {
+        "problema_0": 0
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

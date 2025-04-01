@@ -1,0 +1,15 @@
+version: "3.1"
+
+stories:
+- story: Fluxo completo de ajuda
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: pedir_ajuda
+  - action: utter_oferecer_ajuda
+  - intent: problema_acesso
+  - action: utter_resposta_acesso
+  - intent: confirmar
+  - action: utter_agradecer
+  - intent: despedir
+  - action: utter_despedir

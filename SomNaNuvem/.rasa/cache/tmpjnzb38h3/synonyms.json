@@ -1,0 +1,11 @@
+{
+  "não consigo acessar": " \"acesso\"",
+  " \"acesso\"": " \"acesso\"",
+  "problema de login": " \"acesso\"",
+  "quero mudar de plano": " \"mudar_plano\"",
+  " \"mudar_plano\"": " \"mudar_plano\"",
+  "alterar assinatura": " \"mudar_plano\"",
+  "app não funciona": " \"problema_tecnico\"",
+  " \"problema_tecnico\"": " \"problema_tecnico\"",
+  "música não toca": " \"problema_tecnico\""
+}

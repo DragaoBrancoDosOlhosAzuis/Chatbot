@@ -1,0 +1,32 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedir\"}}]": "utter_despedir",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedir\"}}, {\"prev_action\": {\"action_name\": \"utter_despedir\"}, \"user\": {\"intent\": \"despedir\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mudar_plano\"}}]": "utter_resposta_mudar_plano",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mudar_plano\"}}, {\"prev_action\": {\"action_name\": \"utter_resposta_mudar_plano\"}, \"user\": {\"intent\": \"mudar_plano\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"falar_com_humano\"}}]": "utter_encaminhar_humano",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"falar_com_humano\"}}, {\"prev_action\": {\"action_name\": \"utter_encaminhar_humano\"}, \"user\": {\"intent\": \"falar_com_humano\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cumprimentar\"}}]": "utter_cumprimentar",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cumprimentar\"}}, {\"prev_action\": {\"action_name\": \"utter_cumprimentar\"}, \"user\": {\"intent\": \"cumprimentar\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"problema_acesso\"}}]": "utter_resposta_acesso",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"problema_acesso\"}}, {\"prev_action\": {\"action_name\": \"utter_resposta_acesso\"}, \"user\": {\"intent\": \"problema_acesso\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"problema_tecnico\"}}]": "utter_resposta_tecnico",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"problema_tecnico\"}}, {\"prev_action\": {\"action_name\": \"utter_resposta_tecnico\"}, \"user\": {\"intent\": \"problema_tecnico\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "predicting default action with intent session_start",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mudar_plano\"}}, {\"prev_action\": {\"action_name\": \"utter_resposta_mudar_plano\"}, \"user\": {\"intent\": \"mudar_plano\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mudar_plano\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"falar_com_humano\"}}, {\"prev_action\": {\"action_name\": \"utter_encaminhar_humano\"}, \"user\": {\"intent\": \"falar_com_humano\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"falar_com_humano\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"problema_tecnico\"}}, {\"prev_action\": {\"action_name\": \"utter_resposta_tecnico\"}, \"user\": {\"intent\": \"problema_tecnico\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"problema_tecnico\"}}]"
+    ]
+  }
+}

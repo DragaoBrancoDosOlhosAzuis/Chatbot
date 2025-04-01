@@ -1,0 +1,33 @@
+nlu:
+- intent: mudar_plano
+  examples: |
+    - mudar plano
+    - trocar plano
+    - quero outro plano
+    - alterar assinatura
+    - plano diferente
+    - como mudar de plano
+    - mudança de plano
+    - quero plano melhor
+
+- intent: problema_acesso
+  examples: |
+    - não consigo entrar
+    - esqueci senha
+    - login não funciona
+    - conta bloqueada
+    - acesso negado
+    - recuperar senha
+    - não entra na conta
+    - problemas para logar
+
+- intent: problema_tecnico
+  examples: |
+    - app não funciona
+    - aplicativo travado
+    - música não toca
+    - tela preta
+    - app quebrado
+    - erro no aplicativo
+    - problema técnico
+    - app não abre

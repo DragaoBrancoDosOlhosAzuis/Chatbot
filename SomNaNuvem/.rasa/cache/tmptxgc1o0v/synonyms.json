@@ -1,0 +1,16 @@
+{
+  "não consigo acessar": " \"acesso\"",
+  " \"acesso\"": " \"acesso\"",
+  "entrar": " \"acesso\"",
+  "acesso": " \"acesso\"",
+  "mudar meu plano": " \"mudar_plano\"",
+  " \"mudar_plano\"": " \"mudar_plano\"",
+  "alterar o plano": " \"mudar_plano\"",
+  "plano": " \"mudar_plano\"",
+  "aplicativo não funciona": " \"problema_tecnico\"",
+  " \"problema_tecnico\"": " \"problema_tecnico\"",
+  "app está travando": " \"problema_tecnico\"",
+  "problema técnico": " \"problema_tecnico\"",
+  "música não toca": " \"problema_tecnico\"",
+  "áudio não funciona": " \"problema_tecnico\""
+}
