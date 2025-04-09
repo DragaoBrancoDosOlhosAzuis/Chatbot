@@ -1,0 +1,81 @@
+version: "3.1"
+
+stories:
+- story: cumprimento
+  steps:
+  - intent: cumprimento
+  - action: utter_cumprimento
+
+- story: despedida
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- story: ajuda
+  steps:
+  - intent: ajuda
+  - action: utter_ajuda
+
+- story: buscar por título com entidade
+  steps:
+  - intent: buscar_livro_titulo
+    entities:
+    - titulo_livro
+  - action: action_buscar_livro_titulo
+  - action: action_mostrar_resultados
+
+- story: buscar por título sem entidade
+  steps:
+  - intent: buscar_livro_titulo
+  - action: utter_pedir_titulo
+  - intent: buscar_livro_titulo
+    entities:
+    - titulo_livro
+  - action: action_buscar_livro_titulo
+  - action: action_mostrar_resultados
+
+- story: buscar por autor com entidade
+  steps:
+  - intent: buscar_livro_autor
+    entities:
+    - nome_autor
+  - action: action_buscar_livro_autor
+  - action: action_mostrar_resultados
+
+- story: buscar por autor sem entidade
+  steps:
+  - intent: buscar_livro_autor
+  - action: utter_pedir_autor
+  - intent: buscar_livro_autor
+    entities:
+    - nome_autor
+  - action: action_buscar_livro_autor
+  - action: action_mostrar_resultados
+
+- story: buscar por assunto com entidade
+  steps:
+  - intent: buscar_livro_assunto
+    entities:
+    - assunto_livro
+  - action: action_buscar_livro_assunto
+  - action: action_mostrar_resultados
+
+- story: buscar por assunto sem entidade
+  steps:
+  - intent: buscar_livro_assunto
+  - action: utter_pedir_assunto
+  - intent: buscar_livro_assunto
+    entities:
+    - assunto_livro
+  - action: action_buscar_livro_assunto
+  - action: action_mostrar_resultados
+
+- story: sem resultados
+  steps:
+  - intent: buscar_livro_titulo
+    entities:
+    - titulo_livro: "Livro Inexistente"
+  - action: action_buscar_livro_titulo
+  - action: utter_sem_resultados
+  - intent: negar
+  - action: utter_despedida

@@ -1,0 +1,24 @@
+recipe: default.v1
+language: pt
+
+pipeline:
+- name: SpacyNLP
+  model: pt_core_news_lg
+- name: SpacyTokenizer
+- name: SpacyFeaturizer
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 100
+  constrain_similarities: true
+
+policies:
+- name: MemoizationPolicy
+- name: TEDPolicy
+  max_history: 5
+  epochs: 100
+- name: RulePolicy
+assistant_id: 20250408-204517-lower-round

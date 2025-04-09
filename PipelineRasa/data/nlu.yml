@@ -1,0 +1,73 @@
+version: "3.1"
+
+nlu:
+- intent: cumprimento
+  examples: |
+    - oi
+    - olá
+    - bom dia
+    - boa tarde
+    - boa noite
+    - e aí
+    - saudacoes
+
+- intent: despedida
+  examples: |
+    - tchau
+    - até logo
+    - até mais
+    - adeus
+    - obrigado
+    - valeu
+    - falou
+
+- intent: ajuda
+  examples: |
+    - ajuda
+    - o que você faz?
+    - como você funciona?
+    - o que posso perguntar?
+    - me ajude
+    - como usar?
+    - quais suas funções?
+
+- intent: buscar_livro_titulo
+  examples: |
+    - quero o livro [Dom Casmurro](titulo_livro)
+    - procuro [O Senhor dos Anéis](titulo_livro)
+    - você tem [1984](titulo_livro)?
+    - estou procurando [A Revolução dos Bichos](titulo_livro)
+    - [Harry Potter](titulo_livro)
+    - queria encontrar [Cem Anos de Solidão](titulo_livro)
+    - tem o livro [O Pequeno Príncipe](titulo_livro)?
+
+- intent: buscar_livro_autor
+  examples: |
+    - livros de [Machado de Assis](nome_autor)
+    - obras de [Clarice Lispector](nome_autor)
+    - quero livros do autor [Jorge Amado](nome_autor)
+    - [Stephen King](nome_autor)
+    - autora [Agatha Christie](nome_autor)
+    - tem algo da [Rachel de Queiroz](nome_autor)?
+    - queria algo escrito por [George Orwell](nome_autor)
+
+- intent: buscar_livro_assunto
+  examples: |
+    - livros sobre [programação](assunto_livro)
+    - quero algo sobre [história do brasil](assunto_livro)
+    - [ficção científica](assunto_livro)
+    - [fantasia](assunto_livro)
+    - [romance](assunto_livro)
+    - [biografias](assunto_livro)
+    - [ciência](assunto_livro)
+    - [tecnologia](assunto_livro)
+
+- intent: negar
+  examples: |
+    - não
+    - negativo
+    - não quero
+    - não obrigado
+    - não agora
+    - talvez depois
+    - cancelar

@@ -1,0 +1,81 @@
+version: "3.1"
+
+intents:
+  - cumprimento
+  - despedida
+  - buscar_livro_titulo
+  - buscar_livro_autor
+  - buscar_livro_assunto
+  - negar
+  - ajuda
+
+entities:
+  - titulo_livro
+  - nome_autor
+  - assunto_livro
+
+slots:
+  titulo_livro:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: titulo_livro
+  
+  nome_autor:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: nome_autor
+  
+  assunto_livro:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: assunto_livro
+  
+  livro_encontrado:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+  
+  autor_encontrado:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+  
+  assunto_encontrado:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+
+responses:
+  utter_cumprimento:
+    - text: "Olá! Sou o assistente da biblioteca comunitária. Como posso ajudar?"
+  utter_despedida:
+    - text: "Até logo! Volte sempre para buscar mais livros."
+  utter_ajuda:
+    - text: "Posso ajudar você a encontrar livros por título, autor ou assunto. Por exemplo, você pode dizer 'Quero encontrar um livro sobre programação' ou 'Procuro livros de Machado de Assis'."
+  utter_pedir_titulo:
+    - text: "Qual é o título do livro que você está procurando?"
+  utter_pedir_autor:
+    - text: "De qual autor você gostaria de buscar livros?"
+  utter_pedir_assunto:
+    - text: "Sobre qual assunto você quer encontrar livros?"
+  utter_sem_resultados:
+    - text: "Não encontrei livros com esses critérios. Gostaria de tentar outra busca?"
+
+actions:
+  - action_buscar_livro_titulo
+  - action_buscar_livro_autor
+  - action_buscar_livro_assunto
+  - action_mostrar_resultados
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
